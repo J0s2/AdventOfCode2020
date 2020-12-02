@@ -4,7 +4,6 @@ def leer(file_path):
 
     f = open(file_path)
     l = [int(i) for i in f]
-    print(l)
     f.close()
 
     return l
@@ -27,10 +26,10 @@ def star2(l, num):
 
       if sum(combinacion) == 2020:  
 
-          return combinacion[0] * combinacion[1] * combinacion[3]
+          return combinacion[0] * combinacion[1] * combinacion[2]
 
 
-l = leer(r'Day 1\input.txt')
+l = leer('Day 1/input.txt')
 
-print(star1(l, 2))
-print(star1(l, 3))
+print('Solucion 1: ', star1(l, 2))
+print('Solucion 2: ', star2(l, 3))
